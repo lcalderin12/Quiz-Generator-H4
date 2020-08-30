@@ -4,7 +4,7 @@
     margin-right: 100px;
     background-color:teal;
     font-family: cursive;
-    font-size: 200px;
+    font-size: 50px;
     color: white;
 }
 
@@ -34,10 +34,12 @@
 }
 
 #counter    {
-    margin: 20px;
+    margin-left: 400px;
+    margin-right: 400px;
     padding: 20px;
     background-color: red;
     text-align: center;
+    font-weight: bolder;
 }
 
 #progress   {
