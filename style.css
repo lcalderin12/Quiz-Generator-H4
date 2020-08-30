@@ -1,0 +1,71 @@
+#start  {
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color:teal;
+    font-family: cursive;
+    font-size: 200px;
+    color: white;
+}
+
+#question   {
+    margin: 20px;
+    padding: 20px;
+    background-color: aqua;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+#choices    {
+    margin: 20px;
+    padding: 20px;
+    background-image: url(https://c8.alamy.com/comp/R24GXW/3d-rendering-shiny-question-mark-with-black-question-marks-background-R24GXW.jpg);
+    text-align: center;
+}
+.choice {
+    margin: 20px;
+    border: 20px,20px,20px,20px,;
+    border-left-width: 10px;
+    padding: 10px;
+    background-color: palegreen;
+    box-sizing: border-box;
+    
+}
+
+#counter    {
+    margin: 20px;
+    padding: 20px;
+    background-color: red;
+    text-align: center;
+}
+
+#progress   {
+    margin: 20px;
+    border: 20px;
+    padding: 10px;
+    
+}
+
+#quiz   {
+    margin: 100px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+#scoreContainer {
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: bolder;
+    color:teal;
+    background-color:pink;
+}
+
+#username   {
+    size: 50px;
+
+}

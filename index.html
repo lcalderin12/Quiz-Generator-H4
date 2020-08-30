@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medical Quiz</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <button id="start">Start Quiz!</button>
+        <div id="quiz" style="display: none">
+            <div id="question" class="col-lg-4"></div>
+            <div id="choices">
+                <button class="choice" id="A" onclick="checkAnswer('A')"></button>
+                <button class="choice" id="B" onclick="checkAnswer('B')"></button>
+                <button class="choice" id="C" onclick="checkAnswer('C')"></button>
+                <button class="choice" id="D" onclick="checkAnswer('D')"></button>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+            </div>
+        </div>
+        <div id="scoreContainer" style="display: none">
+            <div class="input-group">
+                    <label for="username">Username:</label>
+                    <br>
+                    <input type="text" name="username" id="username" placeholder="your name" />
+             </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
