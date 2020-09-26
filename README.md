@@ -14,6 +14,6 @@ This four question quiz will test for your knowledge of basic medical expertise.
 ## Screenshots
 <br>
 
-![](img/start.jpeg)
-![](img/questions.jpeg)
-![](img/score.jpeg)
+![](img/start.png)
+![](img/questions.png)
+![](img/score.png)
