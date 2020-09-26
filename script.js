@@ -9,6 +9,17 @@ const choiceD = document.getElementById("D");
 const counter = document.getElementById("counter");
 const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
+var localDiv = document.querySelector("local-storage");
+var nameDivInput = document.querySelector("#username")
+var inputGroup = document.querySelector(".input-group");
+
+//button
+var signUpButton = document.querySelector("#sign-up");
+
+//where local variables will be stored
+var prevUserName = document.getElementById("prev-name");
+var prevUserScore = document.getElementById("prev-score");
+lastRendered();
 
 // formulating our medical questions
 let questions = [
@@ -104,7 +115,9 @@ function renderCounter(){
             // end the quiz and show the score
             clearInterval(TIMER);
             quiz.style.display = "none";
+            inputGroup.style.display = "block";
             scoreRender();
+            //lastRendered();
         }
     }
 }
@@ -124,7 +137,9 @@ function checkAnswer(answer){
         // end the quiz and show the score
         clearInterval(TIMER);
         quiz.style.display = "none";
+        inputGroup.style.display = "block";
         scoreRender();
+        lastRendered();
     }
 }
 
@@ -134,6 +149,34 @@ function scoreRender(){
     
     // calculate the amount of question percent answered by the user
     const scorePerCent = Math.round(100 * score/questions.length);
-    
+   
     scoreDiv.innerHTML += "<p>"+ "Your score is: "+ "<br>" + scorePerCent +"%</p>";
+    
+
+    localStorage.setItem("score", scorePerCent);
+
+        localDiv.style.display = "none";
+      lastRendered();
+
+}
+//button action
+signUpButton.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    var yourName = nameDivInput.value;
+    localStorage.setItem("username", yourName);
+
+    lastRendered();
+
+});
+
+
+
+function lastRendered() {
+    var username = localStorage.getItem("username");
+    var score = localStorage.getItem("score");
+
+    prevUserName.textContent = username;
+    prevUserScore.textContent = score;
+
 }
